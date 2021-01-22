@@ -28,3 +28,52 @@ const includesValue = (array, value) => {
 //includes method already return true/false, no need for if statement
 
 console.log(includesValue(students, 'Greg')); // returns false 
+
+
+//                LOOPS! 
+
+for (let i = 0; i <= 15; i++ ) { 
+  console.log(i);
+}
+
+// ARRAYS WITH LOOPS 
+
+const instructors = ['Dr. T', 'Aja', 'Trinity', 'Discussion tickets'];
+
+for (let i = 0; i < instructors.length; i++) {
+  console.log(instructors[i]);
+}
+
+// ARRAYS, LOOPS, FUNCTIONS 
+
+const colors = ['blue', 'purple', 'red', 'green', 'orange'];
+
+const colorLoop = () => {
+  let domString = ''; 
+  for (let i = 0; i < colors.length; i++) {
+    domString += `<h1>${colors[i]}</h1>`;
+  }
+
+  console.log(domString); // will run AFTER for loop is done
+}
+
+colorLoop();
+
+const e14instructors = [
+{first: 'Trinity', last: 'Christiana'}, 
+{first: 'Aja', last: 'Washington'}, 
+{first: 'Teresa', last: 'Vasquez'}
+];
+
+const nameLoop = () => {
+  let domString = ''; 
+
+  for (let i = 0; i < e14instructors.length; i++) {
+    domString += `<h1>${e14instructors[i].first} ${e14instructors[i].last}</h1>`;
+  }
+
+  console.log(domString);
+
+}
+
+nameLoop();
